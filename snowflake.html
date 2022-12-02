@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  .wenzi{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    text-shadow: 2px 0px 1px rgb(175, 175, 175);
+ color: aliceblue;
+      text-align: center;
+      /* text-shadow: 2px 3px 1px pink; */
+      overflow: auto; /* 溢出需要可滚动 */
+      scrollbar-width: none; /* Firefox隐藏滚动条 */
+      -ms-overflow-style: none; /* Internet Explorer 10+隐藏滚动条 */
+    }
+    ::-webkit-scrollbar {
+      width: 0; /* Safari,Chrome 隐藏滚动条 */
+      height: 0; /* Safari,Chrome 隐藏滚动条 */
+      display: none; /* 移动端、pad 上Safari，Chrome，隐藏滚动条 */
+    }
+    .bottom {
+      display: flex;
+      margin: 20px 0px;
+      justify-content: space-between;
+      padding: 0 20px;
+
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+  <body>
+    <script type="text/javascript" src="./pugongying/jquery-1.8.2.min.js"></script>
+    <script src="./pugongying//jq.snow.js"></script>
+      <!--下面是调用方法和参数说明-->
+    <script>
+    $(function(){
+      $.fn.snow({ 
+        minSize: 5,		//雪花的最小尺寸
+        maxSize: 40, 	//雪花的最大尺寸
+        newOn: 100		//雪花出现的频率 这个数值越小雪花越多
+      });
+    });
+    </script>
+    <div class="wenzi">
+      <h3>Scarborough Fair</h3>
+      作词 : Simon & Garfunkel <br /><br />
+      Parsley, sage, rosemary and thyme<br />
+      香芹、鼠尾草、迷迭香和百里香<br /><br />
+
+      Remember me to one who lives there<br />
+      请代我问候住在那里的一个人<br />
+      He once was a true love of mine<br />
+      他曾经是我的真爱<br />
+      Tell him to make me a cambric shirt<br />
+      叫他为我做一件麻纱衬衫<br />
+      Parsley, sage, rosemary and thyme<br />
+      香芹、鼠尾草、迷迭香和百里香<br /><br /><br />
+
+      Without no seams nor needle work<br />
+      毫无裁剪和针脚<br />
+      Then he'll be a true love of mine<br />
+      然后他将成为我的真爱<br />
+      Tell him to find me an acre of land<br />
+      叫他为我找一亩地<br />
+      Parsley, sage, rosemary and thyme<br />
+      香芹、鼠尾草、迷迭香和百里香<br />
+      Between salt water and the sea strands<br />
+      在海水与沙滩之间<br /><br /><br />
+
+      Then he'll be a true love of mine<br />
+      然后他将成为我的真爱<br /><br />
+
+      Tell him to reap it with a sickle of leather<br />
+      叫他用皮镰刀将其收割<br />
+
+      Parsley, sage, rosemary and thyme<br />
+      香芹、鼠尾草、迷迭香和百里香<br /><br />
+
+      And gather it all in a bunch of heather<br />
+      然后用一根帚石楠将其束起<br /><br />
+
+      Then he'll be a true love of mine<br />
+      然后他将成为我的真爱<br />
+      Are you going to Scarborough Fair<br />
+      你要去斯卡波罗集市吗<br /><br />
+
+      Parsley, sage, rosemary and thyme<br />
+      香芹、鼠尾草、迷迭香和百里香<br /><br />
+
+      Remember me to one who lives there<br />
+      请代我问候住在那里的一个人<br /><br />
+
+      He once was a true love of mine<br />
+      他曾经是我的真爱<br />
+      <div class="bottom">
+        <div class="left"><a href="./index.html"> <-- 回首页</a></div>
+        <div class="right"><a href="./cherry_blossoms.html">下一首 --></a></div>
+      </div>
+    </div>
+    <audio
+      id="bgmusic"
+      src="https://myzhangchangsheng.github.io/DigestPages.github.io/static/muisc/ScarboroughFair.mp3"
+      autoplay="autoplay"
+      loop="loop"
+      style="display: block; width: 3%; height: 3%"
+    ></audio>
+  
+  </body>
+</html>
